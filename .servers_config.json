@@ -1,0 +1,58 @@
+{
+    "mcpServers": {
+        "gmail": {
+            "command": "node",
+            "args": [
+                "/Users/raghavareddy/Downloads/projects/contactswing-project/mcp/Servers/gmail-mcp/dist/index.js",
+                "clinet_oauth_tokens",
+                "{\"token\":\"END USER TOKEN\",\"refresh_token\":\"END USER REFRESH TOKEN\",\"token_uri\":\"https://oauth2.googleapis.com/token\",\"client_id\":\"USER CLIENT ID\",\"client_secret\":\"USER CLIENT SECRET\",\"scopes\":[\"END USER SCOPES\"],\"access_token\":\"USER ACCESS TOKEN\",\"expiry_date\":\"END USER EXPIRY DATE\"}"
+            ]
+        },
+        "calendar": {
+            "command": "node",
+            "args": [
+                "/Users/raghavareddy/Downloads/projects/contactswing-project/mcp/Servers/calendar-mcp/dist/index.js",
+                "clinet_oauth_tokens",
+                "{\"token\":\"END USER TOKEN\",\"refresh_token\":\"END USER REFRESH TOKEN\",\"token_uri\":\"https://oauth2.googleapis.com/token\",\"client_id\":\"USER CLIENT ID\",\"client_secret\":\"USER CLIENT SECRET\",\"scopes\":[\"END USER SCOPES\"],\"access_token\":\"USER ACCESS TOKEN\",\"expiry_date\":\"END USER EXPIRY DATE\"}"
+            ]
+        },
+        "sequential-thinking": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-sequential-thinking"
+            ]
+        },
+        "puppeteer": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-puppeteer"
+            ]
+        },
+        "browsermcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@browsermcp/mcp@latest"
+            ]
+        },
+        "memory": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-memory"
+            ]
+        },
+        "brave-search": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-brave-search"
+            ],
+            "env": {
+                "BRAVE_API_KEY": "BRAVE_API_KEY"
+            }
+        }
+    }
+}
